@@ -4,7 +4,6 @@ bower_components/
 vendor/
 
 # Переменные окружения и секреты
-.env
 .env.local
 .env.*.local
 *.pem

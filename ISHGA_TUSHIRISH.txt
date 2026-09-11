@@ -1,0 +1,134 @@
+╔══════════════════════════════════════════════════════════════╗
+║         TELEGRAM RESUME BOT - TEZKOR ISHGA TUSHIRISH         ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 BOSQICHMA-BOSQICH KO'RSATMA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  BOT TOKEN OLISH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   a) Telegram'da @BotFather ga o'ting
+   b) /newbot buyrug'ini yuboring
+   c) Bot nomi kiriting: MyResumeBot
+   d) Bot username kiriting: my_resume_bot
+   e) Token oling (masalan: 1234567890:ABCdefGHIjklMNOpqrsTUVwxyz)
+
+2️⃣  LOYIHANI SOZLASH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Terminal'da quyidagi buyruqlarni bajaring:
+
+   # Loyiha papkasiga o'tish
+   cd telegram-resume-bot
+
+   # Dependencies o'rnatish
+   npm install
+
+3️⃣  .env FAYLNI SOZLASH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # .env faylni yaratish
+   cp .env.example .env
+
+   # .env faylni tahrirlash va tokenni qo'yish
+   # Windows'da: notepad .env
+   # Mac/Linux'da: nano .env
+   
+   Quyidagi qatorni o'zgartiring:
+   BOT_TOKEN=YOUR_ACTUAL_TOKEN_HERE
+
+4️⃣  BOTNI ISHGA TUSHIRISH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   npm start
+
+   ✅ Muvaffaqiyatli ishga tushsa, ko'rasiz:
+   ✅ Bot muvaffaqiyatli ishga tushdi!
+   📱 Bot nomi: @your_bot_username
+
+5️⃣  BOTNI SINAB KO'RISH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   a) Telegram'da botni toping
+   b) /start bosing
+   c) "Resume yaratish" tugmasini bosing
+   d) Savollarга javob bering
+   e) PDF oling!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 FOYDALI BUYRUQLAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Botni to'xtatish:
+   Ctrl + C
+
+Development rejimda ishga tushirish (auto-reload):
+   npm run dev
+
+Node.js versiyasini tekshirish:
+   node --version
+   (v14 yoki yuqori bo'lishi kerak)
+
+Dependencies qayta o'rnatish:
+   rm -rf node_modules package-lock.json
+   npm install
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🐛 MUAMMOLARNI YECHISH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "BOT_TOKEN topilmadi!" xatoligi:
+   → .env fayl yaratilganligini tekshiring
+   → Token to'g'ri yozilganligini tekshiring
+   → .env faylda BOT_TOKEN=... bo'lishi kerak
+
+❌ "Cannot find module..." xatoligi:
+   → npm install qayta bajaring
+
+❌ "Invalid token" xatoligi:
+   → @BotFather'dan yangi token oling
+   → Token to'liq ko'chirilganligini tekshiring
+
+❌ PDF yaratilmayapti:
+   → resumes/ papka mavjudligini tekshiring
+   → Disk space borligini tekshiring
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 LOYIHA STRUKTURASI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+telegram-resume-bot/
+├── src/
+│   ├── bot.js              ← Asosiy bot mantigi
+│   ├── resumeGenerator.js  ← PDF yaratish
+│   ├── states.js           ← State management
+│   └── utils/
+│       └── validator.js    ← Validatsiya
+├── resumes/                ← PDF fayllar
+├── package.json
+├── .env                    ← Token bu yerda!
+└── README.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 BOT BUYRUQLARI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+/start   - Botni boshlash
+/help    - Yordam olish
+/cancel  - Jarayonni bekor qilish
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 PRODUCTION UCHUN (IXTIYORIY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PM2 orqali ishga tushirish:
+   npm install -g pm2
+   pm2 start src/bot.js --name resume-bot
+   pm2 save
+   pm2 startup
+
+Server qayta ishga tushganda avtomatik ishga tushadi.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ TAYYOR! Bot ishlayapti!
+
+Savollar bo'lsa README.md faylga qarang yoki issue oching.
+
+Omad! 🚀

@@ -1,0 +1,35 @@
+{
+  "name": "telegram-resume-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for creating professional resumes in PDF or DOCX format (TypeScript)",
+  "main": "dist/bot.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bot.js",
+    "dev": "nodemon --exec ts-node src/bot.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "resume",
+    "pdf",
+    "docx",
+    "typescript"
+  ],
+  "author": "Professional Developer",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.15.0",
+    "pdfkit": "^0.13.0",
+    "dotenv": "^16.3.1",
+    "docx": "^9.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.0.2",
+    "@types/node": "^20.14.9",
+    "@types/pdfkit": "^0.13.4"
+  }
+}

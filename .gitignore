@@ -1,0 +1,47 @@
+# Зависимости / Пакеты
+node_modules/
+bower_components/
+vendor/
+
+# Переменные окружения и секреты
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Сборка и компиляция
+dist/
+build/
+out/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Логи и временные файлы
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+
+# Файлы операционных систем
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Настройки IDE и редакторов
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Кэш
+.cache/
+.eslintcache
+*.pyc
+__pycache__/
